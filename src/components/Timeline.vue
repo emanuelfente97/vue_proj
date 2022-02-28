@@ -1,59 +1,91 @@
 <template>
   <section id="Timeline">
-    <div class="container">
-      <p class="skl" style="font-size: 45px">
-        <span id="skl"><strong>Resume </strong> </span>
-      </p>
-      <br />
+   <section id="resume" class="resume">
+      <div class="container">
+<div class= "container">
+        <div class="section-title">
+             <p class="skl" style="font-size: 45px">
+          <span id="skl"><strong>My Resume</strong> </span>
+        </p>
+        </div>
+    <p><em> I have an eargerness to learn, I'm determined,Resilient and I have a positive mindset.</em></p>
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="resume-title"><strong>Summary</strong></h1>
+            <div class="resume-item pb-0">
+              <h4>Emanuel Fente</h4>
+              <p><em>Dedicated and motivated individual looking to secure a challenging position at a reputable company to apply and expand my knowledge and skills whilst contributing significantly in the success of the company. I work well with people and I am open to criticism.</em></p>
+              <p>
+              </p><ul>
+                <li>2+ years of working with people,</li>
+                <li>Ability to plan, organise and prioritze work,</li>
+                <li>Honest</li>
+              </ul>
+            </div>
 
-      <div class="timeline">
-        <div class="containerp left timeline-cont">
-          <div class="contentq animate__animated animate__slideInLeft">
-            <h2 style="color: black">2021</h2>
-            <h3 style="color: black">Web Development</h3>
-            <p style="color: black"><b>Life choices Academy</b></p>
-            <p style="color: black"><strong>Learner</strong></p>
+            <h1 class="resume-title"><strong>Education</strong></h1>
+              <div class="resume-item">
+              <h4>Web development</h4>
+              <h5>2021 - Present</h5>
+              <p><em>Life Choices Academy</em></p>
+              <p>6 Months learning of fundamentals of Full stack, back-end and front-end development. The academy also provides training for professional and personal development.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor Of Mathematical &amp; Statistical Science</h4>
+              <h5>2017 - 2020</h5>
+              <p><em>University of the Western Cape</em></p>
+              <p><em>Core Modules:</em> Mathematics including Financial Maths, Physical Sciences includig basics of Astro physics, Statistics(Major) </p>
+            </div>
+               <div class="resume-item">
+              <h4> Matric </h4>
+              <h5>2014</h5>
+              <p><em>St James Senior Secondary School</em></p>
+              <p><em>Core Subjects:</em> Mathematics, Life Sciences, Physical Sciences and Geography</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-6">
+            <h1 class="resume-title"><strong> Experience</strong></h1>
+            <div class="resume-item">
+              <h4>Customer Sales and Services Agent</h4>
+              <h5> Jun/2021 - Sep/2021</h5>
+              <p><em>Mind Pearl (Qantas)</em></p>
+              <p>
+              </p><ul>
+                <li>Provide assistant with check-in, ticketing changes, re-booking of itineraries and special services requested by passengers. </li>
+                <li>Answer telephone to provide information, resolve problems encountered by or complaints and assist as needed. </li>
+                <li>Provide current and accurate fare, schedule, flight arrival and departure information, as well as answer general inquires over the telephone </li>
+              </ul>
+              <p></p>
+            </div>
+            <div class="resume-item">
+              <h4>Maths Educator's Assistant</h4>
+              <h5> Dec/2020 - Mar/ 2021</h5>
+              <p><em>Daliwonga Senior Secondary School</em></p>
+              <p>
+              </p><ul>
+                <li> Support teachers with technical preparations,</li>
+                <li>Data Capturing</li>
+                <li>Textbook issuance and record keeping.</li>
+                <li>Provide after school support to learners where applicable.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>UWC Student Assistant</h4>
+              <h5> Jan/2019 - Nov/ 2019</h5>
+              <p><em>University Of The Western Cape</em></p>
+              <ul>
+                <li> Meet with students and parents to advise on steps necessary to complete admission and financial aid forms correctly,</li>
+                <li>Manage and maintain sensitive student information in physical and online files,</li>
+                <li>Making Bookings (Venues, Accommodation) for organisation under the office.</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="containerp right timeline-cont">
-          <div
-            class="contentq animate__animated animate__slideInRight"
-          >
-            <h2 style="color: black">2021</h2>
-            <h3 style="color: black">Customer Sales and Services Agent</h3>
-            <p style="color: black"><b>Mind Pearl</b></p>
-            <p style="color: black"><strong>Call center</strong></p>
-          </div>
         </div>
-        <div class="containerp left timeline-cont">
-          <div class="contentq animate__animated animate__slideInLeft">
-            <h2 style="color: black">2020</h2>
-            <h3 style="color: black">
-              BSc in Mathematical And Statistical Science
-            </h3>
-            <p style="color: black"><b>University Of the Western Cape</b></p>
-            <p style="color: black"><strong>Undergraduate</strong></p>
-          </div>
-        </div>
-        <div class="containerp right timeline-cont">
-          <div class="contentq animate__animated animate__slideInRight">
-            <h2 style="color: black">2020</h2>
-            <h3 style="color: black">Mathematics Teacher Assistant</h3>
-            <p style="color: black"><b>Daliwonga S.S.S</b></p>
-            <p style="color: black"><strong>Teacher Assistant </strong></p>
-          </div>
-        </div>
-        <div class="containerp left timeline-cont">
-          <div class="contentq">
-            <h2 style="color: black">2019</h2>
-            <h3 style="color: black">Student Assistant</h3>
-            <p style="color: black"><b>University Of The Western cape</b></p>
-            <p style="color: black"><strong>Administration</strong></p>
-            <!-- </div> -->
-          </div>
-        </div>
+
       </div>
-    </div>
+    </section>
   </section>
 </template>
 
@@ -62,145 +94,65 @@ export default {};
 </script>
 
 <style scoped>
-#skl {
-  border-bottom: 3px solid red;
-  color: #2c3e50;
+    #Timeline{
+      background: #c9d0d3;
+      color: #2c3e50;
+      padding-top:50px; 
+    }
+    #skl{
+       border-bottom: 3px solid red;
+    }
+  .resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #fafafd;
 }
-#Timeline {
-  padding: 60px;
-  background-color: #c9d0d3;
-  color: #a3aab0;
-  max-height: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-/* The actual timeline (the vertical ruler) */
-.timeline {
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #82909c;
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  text-align: justify;
 }
-
-/* The actual timeline (the vertical ruler) */
-.timeline::after {
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fa0a0afa;
+  margin-bottom: 10px;
+}
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #ff0909;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+.resume .resume-item::before {
   content: "";
   position: absolute;
-  width: 6px;
-  background-color: white;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
   top: 0;
-  bottom: 0;
-  left: 50%;
-  margin-left: -3px;
+  background: rgb(253, 59, 59);
+  border: 2px solid #82909c;
 }
-
-/* Container around content */
-.containerp {
-  padding: 10px 40px;
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.containerp::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
-  background-color: white;
-  border: 4px solid red;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-}
-
-/* Place the container to the left */
-.left {
-  left: 0;
-}
-
-/* Place the container to the right */
-.right {
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  right: 30px;
-  border: medium solid white;
-  border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent white;
-}
-
-/* Add arrows to the right container (pointing left) */
-.right::before {
-  content: " ";
-  height: 0;
-  position: absolute;
-  top: 22px;
-  width: 0;
-  z-index: 1;
-  left: 30px;
-  border: medium solid white;
-  border-width: 10px 10px 10px 0;
-  border-color: transparent white transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -16px;
-}
-
-/* The actual content */
-.contentq {
-  padding: 20px 30px;
-  background-color: white;
-  position: relative;
-  border-radius: 6px;
-  animation-name: slide-in-left;
-  animation-iteration-count: 1;
-  animation-duration: 1s;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-    left: 31px;
-  }
-
-  /* Full-width containers */
-  .containerp {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  /* Make sure that all arrows are pointing leftwards */
-  .containerp::before {
-    left: 60px;
-    border: medium solid white;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent white transparent transparent;
-  }
-
-  /* Make sure all circles are at the same spot */
-  .left::after,
-  .right::after {
-    left: 15px;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .right {
-    left: 0%;
-  }
+.col-lg-6 ul li {
+  list-style: none;
 }
 </style>

@@ -4,23 +4,31 @@
     <div class="container">
       <div class="row align-items-center flex-row-reverse">
         <div class="col-lg-6">
-          <div class="about-text go-to">
-            <h6 style="color:red;font-size:25px">A learner at Life choices academy</h6>
+          <div
+            class="about-text go-to animate__animated animate__fadeInRight animate__repeat-2"
+          >
+            <h6 style="color: red; font-size: 25px">
+              A learner at Life choices academy
+            </h6>
             <p>
               I,
-              <strong><span style="color: red"
-                >Emanuel Fente,</span
-              ></strong>
-             am an aspiring  <strong><span style="color: red"
-                >developer,</span
-              ></strong>living in the Western Cape. I have a degree in  <strong><span style="color: red"
-                >Mathematical and statistical science </span
-              ></strong>from the University of the Western Cape.
-            Currently, I'm enrolled at <strong><span style="color: red"
-                >Life choices academy.</span
-              ></strong> I choose this path because I do not envision the future with no developers. I enjoy working with people, learning new concepts 
-            and I am content that I will be amongst the best developers in the future.
-
+              <strong><span style="color: red">Emanuel Fente,</span></strong>
+              am an aspiring
+              <strong><span style="color: red">developer,</span></strong
+              >living in the Western Cape. I have a degree in
+              <strong
+                ><span style="color: red"
+                  >Mathematical and statistical science
+                </span></strong
+              >from the University of the Western Cape. Currently, I'm enrolled
+              at
+              <strong
+                ><span style="color: red">Life choices academy.</span></strong
+              >
+              I choose this path because I do not envision the future with no
+              developers. I enjoy working with people, learning new concepts and
+              I am content that I will be amongst the best developers in the
+              future.
             </p>
             <div class="row about-list">
               <div class="col-md-6">
@@ -48,13 +56,16 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="about-pic">
+          <div
+          
+            class="about-pic animate__animated animate__fadeInLeft animate__repeat-2"
+          >
             <img
               class="responsive profile"
               src="@/assets/About_pic.png"
               title=""
               alt=""
-              style="width: 60%; height: 150%;"
+              style="width: 60%; height: 150%"
             />
           </div>
         </div>
@@ -65,7 +76,8 @@
 <script></script>
 <style scoped>
 .section {
-  padding: 60px;
+  /* padding: 60px; */
+  background-color: #c9d0d3;
 }
 .title {
   text-align: center;
@@ -86,8 +98,8 @@ h3 {
 #title {
   border-bottom: 3px solid red;
 }
-.about-text{
-    padding-top:30px;
+.about-text {
+  padding-top: 30px;
 }
 * {
   text-align: start;
@@ -111,6 +123,7 @@ h3 {
 .about-text p {
   font-size: 18px;
   max-width: 450px;
+  text-align: justify;
 }
 .about-text p mark {
   font-weight: 600;

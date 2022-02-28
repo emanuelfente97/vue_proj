@@ -1,149 +1,104 @@
 <template>
   <section class="home-testimonial" id="Testimonials">
-    <div class="container">
-       <p class="skl" style="font-size: 45px">
-        <span id="skl"><strong>My Skills:</strong> </span>
+    <div class ="container">
+    <!-- <div class="container"> -->
+      <p class="skl" style="font-size: 45px">
+        <span id="skl"><strong>Testimonials:</strong> </span>
       </p>
-      
-      <div class="container testimonial-inner">
-        <div class="row d-flex justify-content-center" style="row-gap: 20px">
-          <div class="col-md-4">
+
+      <div class="container testimonial-inner" v-if="Testimonials">
+        <div 
+        class="row d-flex justify-content-center" style="row-gap: 20px">
+          <div 
+          v-for=" Testimonial in Testimonials"
+          :key="Testimonial.title" 
+          class=" col-sm-12 col-md-4">
             <div class="tour-item">
               <div class="tour-desc bg-white" style="height: 430px">
                 <div class="tour-text color-grey-3 text-center">
-                  “Emanuel has a very gentle personality. I am confident that he
-                  will continue to be productive and always willing to learn new
-                  concepts.”
+                  {{Testimonial.quate}}
                 </div>
                 <br />
                 <div class="d-flex justify-content-center pt-2 pb-2">
-                  <img class="tm-people" src="@/assets/Godwin.jpeg" alt="" />
+                  <img class="tm-people" :src= "Testimonial.image" alt="" />
                 </div>
                 <div class="link-name d-flex justify-content-center">
-                  Godwin Dzapatswa
+                  {{Testimonial.Name}}
                 </div>
-                <div class="link-position d-flex justify-content-center">
-                  Head of Curriculum and Learning
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div class="tour-item">
-              <div class="tour-desc bg-white" style="height: 430px">
-                <div class="tour-text color-grey-3 text-center">
-                  "Emanuel is such an excellent collegue and a hard worker. He
-                  always brings logic to the table. I recommend him to any
-                  company for his perserverance and hard work"
-                </div>
-                <div class="d-flex justify-content-center pt-2 pb-2">
-                  <img class="tm-people" src="@/assets/Jude.jpeg" alt="" />
-                </div>
-                <div class="link-name d-flex justify-content-center">
-                  Jude Julius
-                </div>
-                <div class="link-position d-flex justify-content-center">
-                  Collegue
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div class="tour-item">
-              <div class="tour-desc bg-white" style="height: 430px">
-                <div class="tour-text color-grey-3 text-center">
-                  “Emanuel Fente is very hard-working. He is always willing to
-                  assist in any way possible. I believe he will be an asset to
-                  any company."
-                </div>
-                <br />
-                <div class="d-flex justify-content-center pt-2 pb-2">
-                  <img class="tm-people" src="@/assets/Reese.jpeg" alt="" />
-                </div>
-                <div class="link-name d-flex justify-content-center">
-                  Reese Abraham
-                </div>
-                <div class="link-position d-flex justify-content-center">
-                  Collegue
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="tour-item">
-              <div class="tour-desc bg-white" style="height: 430px">
-                <div class="tour-text color-grey-3 text-center">
-                  "Emanuel has caring personality. He loves participating, when
-                  the teacher asks questions, he is always happy to answer with
-                  confidence. He will continue to improve rapidly."
-                </div>
-                <div class="d-flex justify-content-center pt-2 pb-2">
-                  <img class="tm-people" src= "@/assets/Seth.jpeg" alt="" />
-                </div>
-                <div class="link-name d-flex justify-content-center">
-                  Seth Kleynhans
-                </div>
-                <div class="link-position d-flex justify-content-center">
-                  Collegue
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="tour-item">
-              <div class="tour-desc bg-white" style="height: 430px">
-                <div class="tour-text color-grey-3 text-center">
-                  “Emanuel Fente works very well with other people, he respects
-                  other peoples's time and is very punctual. I bealive that he
-                  will be a very discipled employee in the future"
-                </div>
-                <br />
-                <div class="d-flex justify-content-center pt-2 pb-2">
-                  <img class="tm-people" src="@/assets/Nande.jpeg" alt=" "/>
-                </div>
-                <div class="link-name d-flex justify-content-center">
-                  Nande Bija
-                </div>
-                <div class="link-position d-flex justify-content-center">
-                  Collegue
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4">
-            <div class="tour-item">
-              <div class="tour-desc bg-white" style="height: 430px">
-                <div class="tour-text color-grey-3 text-center">
-                  "Emanuel Fente has shown optimism for every task that the
-                  Academy has served his way, his workmanship shows high
-                  potential in a professional space. A very committed young
-                  man."
-                </div>
-                <div class="d-flex justify-content-center pt-2 pb-2">
-                  <img class="tm-people" src="@/assets/Mkosana.jpeg" alt="" />
-                </div>
-                <div class="link-name d-flex justify-content-center">
-                  Siyabonga Mkosana
-                </div>
-                <div class="link-position d-flex justify-content-center">
-                  Collegue
-                </div>
+                <div class="link-position d-flex justify-content-center">{{Testimonial.title}}</div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    <!-- </div> -->
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  data () {
+    return {
+      Testimonials: null
+//       Testimonials :[
+//         { 
+//         Name: "Godwin Dzaba",
+//         title : "Head of Curriculum and Learning",
+//         image:"https://i.postimg.cc/NfN9D8Nm/Godwin.jpg",
+//         quate :'"Emanuel has a very gentle personality. He is always willing to learn new concepts. I am confident that he will continue to be productive and grow rapidly."',},
+
+
+//         {
+//         Name: "Jude Julius",
+//         title : "Collegue",
+//         image:"https://i.postimg.cc/Fs0jNCxv/Jude.jpg",
+//         quate :'"Emanuel is such an excellent collegue and a hard worker. He always brings logic to the table. I recommend him to any company for his perserverance and hard work"'
+//         },
+//   {
+//         Name: "Reese Abraham",
+//         title : "Collegue",
+//         image:"https://i.postimg.cc/J4tzQsG2/Reese.jpg",
+//         quate :'"Emanuel Fente is very hard-working. He is always willing to assist in any way possible, and he works well with other people. I believe he will be an asset to any company."'
+//         },
+// {
+//         Name: "Seth Kleynhans",
+//         title : "Collegue",
+//         image:"https://i.postimg.cc/v80WBxJq/Seth.jpg",
+//         quate :'  "Emanuel has caring personality. He loves participating, when the teacher asks questions, he is always happy to answer with confidence. He will continue to improve rapidly."'
+//         },
+// {
+//         Name : " Nande Bija",
+//         title: "Collegue",
+//         image: "https://i.postimg.cc/JzZxG4cs/Nande.jpg",
+//         quate : '“Emanuel Fente works very well with other people, he respects other peoples time and is very punctual. I bealive that he will be a very discipled employee in the future"'
+// },
+// {
+//         Name : "Siyabonga Mkosana",
+//         title: "Collegue",
+//         image: "https://i.postimg.cc/hPrxwzrb/Mkosana.jpg",
+//         quate : '"Emanuel Fente has shown optimism for every task that the Academy has served his way, his workmanship shows high potential in a professional space. A very committed young man."'
+// },
+//       ]
+//       }
+//     }
+// }
+    };
+  },
+    mounted(){
+    fetch('https://simthe.herokuapp.com/testimonials')
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+      this.Testimonials =data
+    })
+  }
+}
 </script>
 
-<style>
-.skl{
-   border-bottom: 3px solid red;
+<style scoped>
+#skl {
+  border-bottom: 3px solid red;
   color: #2c3e50;
 }
 .card-text {
@@ -157,11 +112,11 @@ export default {};
   border-bottom-width: 50px;
   border: purple;
 }
+
 .card-img-top {
   border-radius: 15px;
 }
 .home-testimonial {
-  width: 100%;
   height: max-content;
   z-index: 93889729695634892684608;
   padding-bottom: 50px;
@@ -183,7 +138,6 @@ export default {};
   padding: 40px;
 }
 .tour-item {
-  height: 200%;
   row-gap: 20px;
 }
 
@@ -192,15 +146,19 @@ export default {};
   font-size: 14px;
   color: #6c83a2;
 }
-
+.home-testimonial[data-v-71d609c2] {
+  padding-top: 60px;
+}
 .testimonial-inner img.tm-people {
   width: 150px;
   height: 150px;
   -webkit-border-radius: 50%;
   border-radius: 50%;
+  border: 10px solid red;
   -o-object-fit: cover;
   object-fit: cover;
   max-width: none;
+;    
 }
 
 .link-name {
@@ -214,8 +172,8 @@ export default {};
   font-size: 12px;
   color: #6c83a2;
 }
-  
-@media (max-width: 974px) {
+
+@media (max-height: 1024px) {
   .tour-desc {
     height: 500px;
   }

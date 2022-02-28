@@ -1,262 +1,90 @@
 <template>
   <section style="padding-top: 50px" class="cards" id="cards">
-    <h1
-      class="mt-4"
-      style="text-align: center; color: #2c3e50; padding-bottom: 20px"
-    >
-      <strong> Projects</strong>
-    </h1>
-    <div class="container crds">
-      <div
-        class="row"
-        style="justify-content: center; row-gap: 30px; column-gap: 80px"
-      >
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div
-            class="card mx-auto shadow-lg"
-            style="width: 18rem; background-color: rgb(11, 12, 22)"
-          >
-            <img
-              src="@/assets/ecom.png"
-              class="card-img-top"
-              alt="Cards"
-              style="height: 150px"
-            />
-            <div class="card-body">
-              <h1 class="card-title text-white"><strong>e-commerse</strong></h1>
-              <p class="card-text text-white">
-               HTML, CSS, VueJS
-              </p>
-            </div>
-
-            <div class="card-body">
-              <a
-                href="https://github.com/emanuelfente97/myshop-final.git"
-                target="_blank"
-                class="card-link"
-                ><i class="bi bi-github" style="height: 50px; width: 100px"></i
-              ></a>
-              <a
-                href="https://infallible-yalow-32faf7.netlify.app"
-                target="_blank"
-                class="card-link"
-                ><img
-                  src="@/assets/netlify-icon.svg"
-                  style="height: 20px; width: 20px"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div
-            class="card mx-auto shadow-lg"
-            style="width: 18rem; background-color: rgb(11, 12, 22)"
-          >
-            <img
-              src="@/assets/cards.png"
-              class="card-img-top"
-              alt="Cards"
-              style="height: 150px"
-            />
-            <div class="card-body">
-              <h1 class="card-title text-white"><strong>Cards</strong></h1>
-              <p class="card-text text-white">
-                HTML and CSS
-              </p>
-            </div>
-
-            <div class="card-body">
-              <a
-                href="https://github.com/emanuelfente97/card.git"
-                target="_blank"
-                class="card-link"
-                ><i class="bi bi-github" style="height: 50px; width: 100px"></i
-              ></a>
-              <a
-                href="https://peaceful-yalow-311cbb.netlify.app"
-                target="_blank"
-                class="card-link"
-                ><img
-                  src="@/assets/netlify-icon.svg"
-                  style="height: 20px; width: 20px"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 col-lg-3">
-          <div
-            class="card mx-auto shadow-lg"
-            style="width: 18rem; background-color: rgb(11, 12, 22)"
-          >
-            <img
-              src="@/assets/demo.png"
-              class="card-img-top"
-              alt="cards"
-              style="height: 150px"
-            />
-            <div class="card-body">
-              <h1 class="card-title text-white"><strong>Project</strong></h1>
-              <p class="card-text text-white">
-            HTML and CSS.
-              </p>
-            </div>
-
-            <div class="card-body">
-              <a
-                href="https://github.com/emanuelfente97/web.html.git"
-                target="_blank"
-                class="card-link"
-                ><i class="bi bi-github" style="height: 50px; width: 100px"></i
-              ></a>
-              <a
-                href="https://frosty-bell-d7786a.netlify.app"
-                target="_blank"
-                class="card-link"
-                ><img
-                  src="@/assets/netlify-icon.svg"
-                  style="height: 20px; width: 20px"
-                  alt=""
-              /></a>
-            </div>
-          </div>
-        </div>
+    <div class="container">
+    <p class="skl" style="font-size: 45px">
+      <span id="skl"><strong>Projects:</strong> </span>
+    </p>
+    <div class="container projcont mx-auto">
+      <div class="row d-flex justify-content-center row" v-if="projects">
         <div
-          class="row"
-          style="justify-content: center; row-gap: 30px; column-gap: 80px"
+          v-for="project in projects"
+          :key="project.title"
+          class="col-sm-12 col-md-6 col-lg-4 my-4"
         >
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div
-              class="card mx-auto shadow-lg"
-              style="width: 18rem; background-color: rgb(11, 12, 22)"
-            >
-              <img
-                src="@/assets/mario.png"
-                class="card-img-top"
-                alt="Ani"
-                style="height: 150px"
-              />
-              <div class="card-body">
-                <h1 class="card-title text-white"><strong>Animation</strong></h1>
-                <p class="card-text text-white">
-                  CSS Program
-                </p>
-              </div>
-
-              <div class="card-body">
-                <a
-                  href="https://github.com/emanuelfente97/Mario-Kart-.git"
-                  target="_blank"
-                  class="card-link"
-                  ><i
-                    class="bi bi-github"
-                    style="height: 50px; width: 100px"
-                  ></i
-                ></a>
-                <a
-                  href="https://wizardly-fermi-6f083b.netlify.app"
-                  target="_blank"
-                  class="card-link"
-                  ><img
-                    src="@/assets/netlify-icon.svg"
-                    style="height: 20px; width: 20px"
-                    alt=""
-                /></a>
-              </div>
+          <div
+            class="card mx-auto shadow-lg"
+            style="width: 100%; background-color: rgb(11, 12, 22)"
+          >
+           <div class=pic> <img
+              :src="project.image"
+              class="card-img-top"
+              alt="Cards"
+              style="height: 150px"
+            />
+           </div>
+            <div class="card-body">
+              <h1 class="card-title text-white">
+                <strong>{{ project.title }}</strong>
+              </h1>
+              <p class="card-text text-white">{{ project.TechStack }}</p>
             </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div
-              class="card mx-auto shadow-lg"
-              style="width: 18rem; background-color: rgb(11, 12, 22)"
-            >
-              <img
-                src="@/assets/calculator.png"
-                class="card-img-top"
-                alt="Ani"
-                style="height: 150px"
-              />
-              <div class="card-body">
-                <h1 class="card-title text-white"><strong>Calculator</strong></h1>
-                <p class="card-text text-white"> JavaScript.
-                </p>
-              </div>
 
-              <div class="card-body">
-                <a
-                  href="https://github.com/emanuelfente97/Calculator.git"
-                  target="_blank"
-                  class="card-link"
-                  ><i
-                    class="bi bi-github"
-                    style="height: 50px; width: 100px"
-                  ></i
-                ></a>
-                <a
-                  href="https://jovial-gates-cdb9d8.netlify.app"
-                  target="_blank"
-                  class="card-link"
-                  ><img
-                    src="@/assets/netlify-icon.svg"
-                    style="height: 20px; width: 20px"
-                    alt=""
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <div
-              class="card mx-auto shadow-lg"
-              style="width: 18rem; background-color: rgb(11, 12, 22)"
-            >
-              <img
-                src="@/assets/CRUDE.png"
-                class="card-img-top"
-                alt="Ani"
-                style="height: 150px"
-              />
-              <div class="card-body">
-                <h1 class="card-title text-white"><strong>CRUDE-OPS</strong></h1>
-                <p class="card-text text-white">
-                  VueJS
-                </p>
-              </div>
-
-              <div class="card-body">
-                <a
-                  href="https://github.com/emanuelfente97/Calculator.git"
-                  target="_blank"
-                  class="card-link"
-                  ><i
-                    class="bi bi-github"
-                    style="height: 50px; width: 100px"
-                  ></i
-                ></a>
-                <a
-                  href="https://jovial-gates-cdb9d8.netlify.app"
-                  target="_blank"
-                  class="card-link"
-                  ><img
-                    src="@/assets/netlify-icon.svg"
-                    style="height: 20px; width: 20px"
-                    alt=""
-                /></a>
-              </div>
+            <div class="card-body">
+              <a :href="project.github" target="_blank" class="card-link"
+                ><i class="bi bi-github" style="height: 50px; width: 100px"></i
+              ></a>
+              <a :href="project.netlifyLink" target="_blank" class="card-link"
+                ><img class="net-img" 
+                  :src="project.netImg"
+                  style="height: 20px; width: 20px"
+                  alt=""
+              /></a> 
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </section>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      projects: null,
+    };
+  },
+  mounted() {
+    fetch("https://simthe.herokuapp.com/projects")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        this.projects = data;
+      });
+  },
+};
 </script>
 
 <style>
-.crds{
+
+
+.crds {
   padding-bottom: 50px;
+  padding-left: 8%;
+}
+#skl {
+  border-bottom: 3px solid red;
+}
+.pic{
+  width: 200px;
+  object-fit: cover;
+  margin-top:20px;
+  margin-left:auto ;
+  margin-right:auto ; 
+}
+.net-img {
+  border-radius: 50%;
+  background-color:blue ;
 }
 </style>

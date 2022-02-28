@@ -5,8 +5,10 @@
 <Timeline />
 <projects />
 <Testimonial />
-<Home />
+
 <Contact />
+<Home />
+<footer />
 
 </template>
 <script>
@@ -14,11 +16,12 @@ import Navbar from "./components/Navbar.vue"
 import About from "./views/About.vue"
 import Skills from "./components/Skills.vue"
 import Timeline from "./components/Timeline.vue"
-import Home from "./views/Home.vue"
 import Contact from "./components/Contact.vue"
 import projects from './components/projects.vue'
 import Testimonial from './components/Testimonial.vue'
+import Home from "./views/Home.vue"
 
+import footer from './components/footer.vue'
 
 
 
@@ -34,17 +37,23 @@ export default {
     Timeline,
     projects,
     Testimonial,
+    footer,
   }
 }
 
 </script>
 <style>
+/* #body{
+  overflow-x: hidden;
+  overflow-y: hidden;
+} */
 #app {
   font-family: "Montserrat",sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  
 }
 
 #nav {
