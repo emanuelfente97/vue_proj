@@ -5,7 +5,7 @@
       <div class="row align-items-center flex-row-reverse">
         <div class="col-lg-6">
           <div
-            class="about-text go-to animate__animated animate__fadeInRight animate__repeat-2"
+            class="about-text data-aos=fade-right"
           >
             <h6 style="color: red; font-size: 25px">
               A learner at Life choices academy
@@ -58,7 +58,7 @@
         <div class="col-lg-6">
           <div
           
-            class="about-pic animate__animated animate__fadeInLeft animate__repeat-2"
+            class="about-pic data-aos=fade-left">
           >
             <img
               class="responsive profile"
@@ -73,7 +73,9 @@
     </div>
   </section>
 </template>
-<script></script>
+<script>
+
+</script>
 <style scoped>
 .section {
   /* padding: 60px; */

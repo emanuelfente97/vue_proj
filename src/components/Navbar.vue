@@ -2,15 +2,9 @@
   <section class="header" id="navbar">
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#navbar" data-aos="fade-up"
-          ><strong
-            ><span style="color: red; font-size: 25px">E</span>manuel<span
-              style="color: red; font-size: 25px; padding-left: 5px"
-            >
-              F</span
-            >ente</strong
-          ></a
-        >
+      <a class="navbar-brand" ><strong><span style="color: red; font-size: 25px">E</span>manuel<span style="color: red; font-size: 25px; padding-left: 5px">F</span>ente</strong
+          ></a>
+        
         <button
           class="navbar-toggler"
           type="button"
@@ -56,6 +50,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
+              
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#navbar"
                 ><i class="fa fa-fw fa-home"></i>Home</a
@@ -149,9 +144,8 @@ body {
 }
 .navbar-brand {
   color: rgb(255, 255, 255);
-  text-decoration: none;
+ 
 }
-
 .navbar {
   display: flex;
   padding: 0.4% 4%;
@@ -188,6 +182,10 @@ body {
   display: block;
   margin: auto;
   transition: 0.5s;
+}
+.navbar-toggler{
+  border-radius: 50%;
+  color:red
 }
 .navbar ul li:hover::after {
   width: 100%;
@@ -247,7 +245,12 @@ bluecolor: rgba(33, 150, 243, 1);
 
 .but:hover {
   color: white;
-  background-color: red;
+    -ms-transform: scale(0.5); 
+  -webkit-transform: scale(0.5); 
+  transform: scale(1.1); 
+  background-color: rgb(206, 34, 11) ;
+
+  /* background-color: red; */
 }
 
 .about {
@@ -273,5 +276,28 @@ img {
 @media screen and (max-width: 490px) {
 .title {font-size: 50px !important;}
   
+}
+
+.typewriter title {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
 }
 </style>

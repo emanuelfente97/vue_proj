@@ -66,7 +66,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 
 
 .crds {
@@ -78,11 +78,25 @@ export default {
 }
 .pic{
   width: 200px;
+  height:1000px;
   object-fit: cover;
   margin-top:20px;
   margin-left:auto ;
   margin-right:auto ; 
 }
+.card{
+   transition: transform .2s;
+    height: 340px;
+    width: 100px
+}
+.card:hover{
+  -ms-transform: scale(0.5); 
+  -webkit-transform: scale(0.5); 
+  transform: scale(1.1); 
+  height: 350px;
+  width: 50px;
+}
+
 .net-img {
   border-radius: 50%;
   background-color:blue ;

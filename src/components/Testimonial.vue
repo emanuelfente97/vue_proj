@@ -173,9 +173,8 @@ export default {
   color: #6c83a2;
 }
 
-@media (max-height: 1024px) {
-  .tour-desc {
-    height: 500px;
-  }
+@media screen and (max-width: 768px) {
+.tour-desc {height: 560px !important;}
+
 }
 </style>
