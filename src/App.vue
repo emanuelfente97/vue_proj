@@ -1,27 +1,26 @@
 <template>
-<Navbar />
+<Home />
 <About/>
 <Skills />
 <Timeline />
 <projects />
 <Testimonial />
-
 <Contact />
-<Home />
-<footer />
+
+<Footer />
 
 </template>
 <script>
-import Navbar from "./components/Navbar.vue"
-import About from "./views/About.vue"
-import Skills from "./components/Skills.vue"
-import Timeline from "./components/Timeline.vue"
-import Contact from "./components/Contact.vue"
-import projects from './components/projects.vue'
-import Testimonial from './components/Testimonial.vue'
 import Home from "./views/Home.vue"
+import About from "@/views/About.vue"
+import Skills from "@/components/Skills.vue"
+import Timeline from "@/components/Timeline.vue"
+import Contact from "@/components/Contact.vue"
+import projects from '@/components/projects.vue'
+import Testimonial from '@/components/Testimonial.vue'
+import Footer from "@/components/Footer.vue"
 
-import footer from './components/footer.vue'
+// import footer from './components/footer.vue'
 
 
 
@@ -29,7 +28,7 @@ import footer from './components/footer.vue'
 
 export default {
   components: {
-     Navbar,
+     Home,
     Contact,
     About,
     Home,
@@ -37,7 +36,7 @@ export default {
     Timeline,
     projects,
     Testimonial,
-    footer,
+    Footer,
   }
 }
 

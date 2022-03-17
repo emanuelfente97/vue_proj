@@ -14,7 +14,7 @@
                   class="img"
                   src="https://img.icons8.com/color/48/000000/html-5--v1.png"
                 />
-                <p>65%</p>
+                <p>70%</p>
               </div>
               <div class="pp">
                 <div class="skillDiv">
@@ -30,7 +30,7 @@
                   class="css-img"
                   src="https://img.icons8.com/color/48/000000/css3.png"
                 />
-                <p>60%</p>
+                <p>70%</p>
               </div>
               <div class="pp">
                 <div class="skillDiv">
@@ -41,42 +41,29 @@
 
             <div class="NodeProg ProgWidth">
               <div class="p">
-                <p>Node Js</p>
+                <p>Node-Js</p>
                 <img
                   class="node-img"
                   src="https://iconape.com/wp-content/files/fe/83764/png/nodejs-1.png"
                 />
-                <p>50%</p>
+                <p>65%</p>
               </div>
               <div class="pp">
                 <div class="skillDiv">
-                  <span class="skillBar NodeBar"></span>
+                  <span class="skillBar nodeBar"></span>
                 </div>
               </div>
             </div>
-            <div class="jsProg ProgWidth">
-              <div class="p">
-                <p>JavaScript</p>
-                <img
-                  class="img-js"
-                  src="https://img.icons8.com/color/48/000000/javascript--v1.png"
-                />
-                <p>50%</p>
-              </div>
-              <div class="pp">
-                <div class="skillDiv">
-                  <span class="skillBar jsBar"></span>
-                </div>
-              </div>
-            </div>
+            
+
             <div class="vueProg ProgWidth">
               <div class="p">
-                <p>Vue</p>
+                <p>vue-js</p>
                 <img
-                  class="img-vjs"
-                  src="https://img.icons8.com/windows/32/000000/vuejs.png"
+                  class="vue-img"
+                  src="https://i.postimg.cc/3wHb5Ddh/icons8-vue-js-an-open-source-javascript-framework-for-building-user-interfaces-and-single-page-appli.png"
                 />
-                <p>85%</p>
+                <p>65%</p>
               </div>
               <div class="pp">
                 <div class="skillDiv">
@@ -84,6 +71,26 @@
                 </div>
               </div>
             </div>
+
+
+
+
+            <div class="jsProg ProgWidth">
+              <div class="p">
+                <p>JavaScript</p>
+                <img
+                  class="img-js"
+                  src="https://img.icons8.com/color/48/000000/javascript--v1.png"
+                />
+                <p>65%</p>
+              </div>
+              <div class="pp">
+                <div class="skillDiv">
+                  <span class="skillBar jsBar"></span>
+                </div>
+              </div>
+            </div>
+            
           </div>
           <div class="col-lg-6 col-sm-12">
             <div class="SqlProg ProgWidth">
@@ -93,7 +100,7 @@
                   class="img-mysql"
                   src="https://img.icons8.com/ios-filled/50/000000/database.png"
                 />
-                <p>80%</p>
+                <p>55%</p>
               </div>
               <div class="pp">
                 <div class="skillDiv">
@@ -109,7 +116,7 @@
                   class="img-r"
                   src="https://img.icons8.com/external-becris-lineal-color-becris/64/000000/external-r-data-science-becris-lineal-color-becris.png"
                 />
-                <p>70%</p>
+                <p>50%</p>
               </div>
               <div class="pp">
                 <div class="skillDiv">
@@ -117,11 +124,16 @@
                 </div>
               </div>
             </div>
-            <div class="SASProg ProgWidth">
+
+
+             <div class="SASProg ProgWidth">
               <div class="p">
                 <p>SAS</p>
-                <img class="img-r" src="@/assets/SAS.png" />
-                <p>35%</p>
+                <img
+                  class="img-r"
+                  src="https://i.postimg.cc/vTKwWLb9/SAS.png"
+                />
+                <p>45%</p>
               </div>
               <div class="pp">
                 <div class="skillDiv">
@@ -129,29 +141,16 @@
                 </div>
               </div>
             </div>
-            <div class="bootsrapProg ProgWidth">
-              <div class="p">
-                <p>Bootstrap</p>
-                <img
-                  class="img-bootstrap"
-                  src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png"
-                />
-                <p>35%</p>
-              </div>
-              <div class="pp">
-                <div class="skillDiv">
-                  <span class="skillBar bootstrapBar"></span>
-                </div>
-              </div>
-            </div>
-            <div class="LatexProg ProgWidth">
+
+
+  <div class="LatexProg ProgWidth">
               <div class="p">
                 <p>Latex</p>
                 <img
                   class="ltx-img"
                   src="https://img.icons8.com/color/48/000000/latex.png"
                 />
-                <p>85%</p>
+                <p>50%</p>
               </div>
               <div class="pp">
                 <div class="skillDiv">
@@ -159,6 +158,23 @@
                 </div>
               </div>
             </div>
+
+            <div class="bootsrapProg ProgWidth">
+              <div class="p">
+                <p>Bootstrap</p>
+                <img
+                  class="img-bootstrap"
+                  src="https://cdn-icons-png.flaticon.com/512/5968/5968672.png"
+                />
+                <p>85%</p>
+              </div>
+              <div class="pp">
+                <div class="skillDiv">
+                  <span class="skillBar bootstrapBar"></span>
+                </div>
+              </div>
+            </div>
+          
           </div>
         </div>
       </div>
@@ -218,6 +234,12 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+.vue-img {
+  height: 50px;
+  width: 50px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .node-img {
   height: 50px;
   width: 50px;
@@ -272,57 +294,64 @@ body {
 }
 
 .htmlBar {
-  width: 65%;
+  width: 80%;
   animation: html 3s 1s 5 forwards;
 }
 .cssBar {
   width: 60%;
   animation: css 3s 1s 5 forwards;
 }
-.NodeBar {
-  width: 55%;
-  animation: css 3s 1s 5 forwards;
-}
-.jsBar {
-  width: 50%;
-  animation: js 3s 1s 5 forwards;
+.nodeBar {
+  width: 65%;
+  animation: Node-Js 3s 1s 5 forwards;
 }
 .vueBar {
-  width: 45%;
-  animation: vue 3s 1s 5 forwards;
+  width: 65%;
+  animation: vue-js 3s 1s 5 forwards;
 }
+.jsBar {
+  width: 65%;
+  animation: js 3s 1s 5 forwards;
+}
+
+.sqlBar {
+  width: 55%;
+  animation: mySQL 3s 1s 5 forwards;
+}
+
+.RBar {
+  width: 85%;
+  animation: R-programing 3s 1s 5 forwards;
+}
+
+
 .SASBar {
   width: 45%;
   animation: SAS 3s 1s 5 forwards;
 }
+
 .LatexBar {
   width: 50%;
-  animation: ccp 3s 1s 5 forwards;
+  animation: latex 3s 1s 5 forwards;
 }
 
-.nodeBar {
-  width: 35%;
-  animation: node 3s 1s 5 forwards;
-}
+
+
 .bootstrapBar {
   width: 85%;
-  animation: node 3s 1s 5 forwards;
+  animation: bootstrap 3s 1s 5 forwards;
 }
-.sqlBar {
-  width: 85%;
-  animation: sql 3s 1s 5 forwards;
-}
-.RBar {
-  width: 85%;
-  animation: R 3s 1s 5 forwards;
-}
+
+
+
+
 
 @keyframes html {
   0% {
     width: 0%;
   }
   100% {
-    width: 65%;
+    width: 70%;
   }
 }
 @keyframes css {
@@ -333,31 +362,68 @@ body {
     width: 70%;
   }
 }
+@keyframes Node-Js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+@keyframes vue-js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
 @keyframes js {
   0% {
     width: 0%;
   }
   100% {
-    width: 75%;
-  }
-}
-@keyframes node {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 35%;
+    width: 65%;
   }
 }
 
-@keyframes sql {
+
+@keyframes mySQL {
   0% {
     width: 0%;
   }
   100% {
-    width: 85%;
+    width: 55%;
   }
 }
+
+
+@keyframes R-programing {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+@keyframes SAS {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 45%;
+  }
+}
+
+@keyframes Latex {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
 @keyframes bootstrap {
   0% {
     width: 0%;
@@ -366,36 +432,9 @@ body {
     width: 85%;
   }
 }
-@keyframes SAS {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-@keyframes R {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 50%;
-  }
-}
-@keyframes Latex {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-@keyframes vue {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 45%;
-  }
-}
+
+
+
+
+
 </style>

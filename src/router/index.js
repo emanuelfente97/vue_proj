@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
+import Footer from '../components/Footer.vue'
+
+
 
 
 const routes = [
@@ -8,7 +11,9 @@ const routes = [
     name: 'Home',
     component: Home
   },
+
   {
+  
     path: '/About',
     name: 'About',
     // route level code-splitting

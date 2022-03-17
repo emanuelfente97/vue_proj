@@ -59,10 +59,10 @@
           <div
           
             class="about-pic data-aos=fade-left">
-          >
+          
             <img
               class="responsive profile"
-              src="@/assets/About_pic.png"
+              src="https://i.postimg.cc/Jz03tN2m/About-pic.png"
               title=""
               alt=""
               style="width: 60%; height: 150%"
