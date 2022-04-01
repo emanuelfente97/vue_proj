@@ -86,7 +86,7 @@ export default {
   methods: {
     handleSubmit() {
       (this.name, this.surname, this.email, this.phone, this.message),
-        fetch("http://localhost:9000/contact", {
+        fetch("https://fentes-project.herokuapp.com/contact/", {
           method: "POST",
           body: JSON.stringify({
             name: this.name,
