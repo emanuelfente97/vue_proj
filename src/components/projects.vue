@@ -56,7 +56,7 @@ export default {
     };
   },
   mounted() {
-    fetch("https://simthe.herokuapp.com/projects")
+    fetch("https://fentes-project.herokuapp.com/projects")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
